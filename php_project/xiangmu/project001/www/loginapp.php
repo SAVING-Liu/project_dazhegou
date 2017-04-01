@@ -19,7 +19,7 @@ $u_pass=$_POST['passwd'];
 
 $conn = new mysqli("localhost", "root", "root" ,"login",3308);
 
-$sql = "select * from logindata where userName='$u_name'and userPass='$u_pass'";
+$sql = "select * from logindata where userName='$u_name' and userPass='$u_pass'";
 
 $res = $conn->query($sql);
 
