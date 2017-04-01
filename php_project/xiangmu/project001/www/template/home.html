@@ -1,0 +1,97 @@
+
+
+<ion-view view-title="折就购">
+	<ion-nav-buttons side="left">
+		<button class="button button-clear" menu-toggle="left">
+			<i class="icon ion-navicon"></i>
+		</button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<button class="button button-clear">
+			<i class="icon ion-calendar"></i>
+		</button>
+	</ion-nav-buttons>
+	<ion-content class="homebg">
+		<ion-slide-box does-continue="true" auto-play="true" slide-interval="3000">
+		  <ion-slide ng-repeat="item in lb_arr">
+		    <div class="box">
+		    	<img ng-src="{{item.pic}}" alt="" />
+		    </div>
+		  </ion-slide>
+		 
+		</ion-slide-box>
+		<section>
+			<div class="row">
+			  <div class="col" ng-repeat="item in arr0">
+			  	<img ng-src="{{item.img}}" alt="" />
+			  	<p>{{item.name}}</p>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col" ng-repeat="item in arr1">
+			  	<img ng-src="{{item.img}}" alt="" />
+			  	<p>{{item.name}}</p>
+			  </div>
+			</div>
+				
+		</section>
+		<div class="goods">
+			<div class="listitem" >
+				<!--遍历加载图片-->
+				
+				<div class="picitem" ng-repeat="item in arr">
+				 	<div class="lingquan">
+				 		<a href="#">
+				 			<span>
+				 				内部券<br />
+				 				<em>{{item.quan}}元</em>
+				 			</span>
+				 			<b></b>
+				 		</a>
+				 	</div>
+				 	<a href="#/tab/home/{{item.id}}" class="homepic_pic">
+				 		<img class="full-image" ng-src="{{item.img}}"/>
+				 		<span class="xinpin">新品</span>
+				 	</a>
+				 	<a href="#" class="picword">
+				 		<p>{{item.title}}</p>
+				 		<div class="row">
+				 			<div class="col tip_quan">
+				 				券后价
+				 				<em></em>
+				 			</div>
+							<div class="col" style="text-align:right;font-weight:bold">￥{{item.price}}</div>
+							<div class="col">天猫</div>
+				 		</div>
+				 	</a>
+					 
+				</div>
+				
+				
+			</div>
+			
+			<!--页码-->
+			<div class="list-page">
+				<div class="page-nav">
+					<span>上一页</span>
+					<span>1</span>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<i>...</i>
+					<a href="#">568</a>
+					<a href="#">下一页</a>
+				</div>
+			</div>
+		</div>
+		<!--公共底部-->
+		<footer-component></footer-component>
+		
+	</ion-content>
+	
+	
+		
+</ion-view>
+

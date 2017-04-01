@@ -1,0 +1,51 @@
+<ion-view>
+<ion-nav-title>
+	{{str1}}
+</ion-nav-title>
+	<ion-content>
+		<div class="banner">
+			<img ng-src={{banner}} alt="" />
+		</div>
+		<div class="goods">
+			<div class="listitem" >
+				<!--遍历加载图片-->
+				
+				<div class="picitem" ng-repeat="item in arr_lisin">
+				 	<a href="#/tab/discount/dislist/{{item.id}}" class="homepic_pic">
+				 		<img class="full-image" ng-src="{{item.img}}"/>
+				 		<p style="color:#666;text-align:center">{{item.title}}</p>
+				 	</a>
+				 	<a href="#" class="picword">
+				 		<div class="row">
+				 			<div class="col" style="font-size:20px;padding:5px 0">
+				 				<i style="font-size:12px">￥</i>{{item.price}}
+				 			</div>
+				 			<div class="col" style="padding:5px 0">
+				 				<i class="del" style="font-size:12px;color:#ababab">￥{{item.price1}}</i>
+				 			</div>
+				 			<div class="col" style="font-size:13px;padding:5px 0">
+				 				去抢购
+				 			</div>
+				 			
+				 		</div>
+				 		
+				 	</a>
+					 
+				</div>
+				
+				
+			</div>
+			
+			<!--页码-->
+			<div class="list-page">
+				<div class="page-nav">
+					<span>1/5</span>
+					
+					<a href="#">下一页</a>
+				</div>
+			</div>
+			<footer-component></footer-component>
+		</div>
+		
+	</ion-content>
+</ion-view>

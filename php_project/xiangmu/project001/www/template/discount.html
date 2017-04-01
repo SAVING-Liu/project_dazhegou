@@ -1,0 +1,60 @@
+<ion-view view-title="品牌折扣">
+	<ion-nav-buttons side="left">
+
+		<a class="icon ion-arrow-left-c button no-border" href="#/tab/home"></a>
+
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<button class="button button-clear" menu-toggle="left">
+			<i class="icon ion-navicon"></i>
+		</button>
+	</ion-nav-buttons>
+	<ion-content>
+		<div class="discountbg">
+			<div class="salegoods">
+				<div class="item" ng-repeat="item in dis_arr">
+					<div class="title">
+						<img ng-src="{{item.img}}"/>
+						<span>{{item.title}}</span>
+					</div>
+					<a href="#/tab/discount/{{item.id}}" class="gotolook">
+						<em>去看看</em><br /> 共96款
+					</a>
+					<div class="row">
+						<div class="col">
+							<img ng-src="{{item.img1}}" alt="" />
+							<div class="mask"></div>
+							<div class="price">
+								<span>
+						  			<i>￥</i>{{item.price}}
+						  		</span>
+								<i class="del">￥{{item.price1}}</i>
+							</div>
+						</div>
+						<div class="col">
+							<img ng-src="{{item.img2}}" alt="" />
+							<div class="mask"></div>
+							<div class="price">
+								<span>
+				  			<i>￥</i>{{item.price2}}
+				  		</span>
+								<i class="del">￥{{item.price3}}</i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--页码-->
+			<div class="list-page">
+				<div class="page-nav">
+					<span>1/3</span>
+
+					<a href="#">下一页</a>
+				</div>
+			</div>
+			<footer-component></footer-component>
+		</div>
+
+	</ion-content>
+</ion-view>

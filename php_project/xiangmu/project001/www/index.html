@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<title></title>
+
+<link rel="manifest" href="manifest.json">
+
+<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/aside.css" />
+
+<!-- ionic/angularjs js -->
+<script src="lib/ionic/js/ionic.bundle.js"></script>
+
+<!-- cordova script (this will be a 404 during development) -->
+<!--<script src="cordova.js"></script>-->
+
+<!-- your app's js -->
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/services.js"></script>	
+<script src="js/footer.js"></script>
+<!--<script type="text/javascript" src="js/jquery/jquery-2.2.4.min.js"></script>-->
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body ng-app="starter">
+<ion-side-menus>
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-assertive">
+			<ion-nav-back-button></ion-nav-back-button>
+		</ion-nav-bar>
+		
+		<ion-nav-view id="box"></ion-nav-view>
+	</ion-side-menu-content>
+	
+	
+	<ion-side-menu >
+		<div class="bar bar-header item-input-inset  bar-stable">
+		  <label class="item-input-wrapper">
+		    
+		    <input type="search" placeholder="搜索商品">
+		    <i class="icon ion-ios-search placeholder-icon"></i>
+		  </label>
+		</div>
+		<ion-content class="has-header">
+			<div class="list asidelist">
+				<a href="#" class="item">首页</a>
+				<a href="#" class="item">男女服饰</a>
+				<a href="#" class="item">母婴用品</a>
+				<a href="#" class="item">美妆用品</a>
+				<a href="#" class="item">居家用品</a>
+				<a href="#" class="item">鞋包配饰</a>
+				<a href="#" class="item">积分商城</a>
+				<a href="#" class="item">文体车品</a>
+				<a href="#" class="item">数码家电</a>
+				<a href="#" class="item">美味食品</a>
+				<a href="#" class="item">正在开发</a>
+				<a href="#" class="item">
+					 <i class="icon ion-ios-person-outline"></i>	
+					 <p>个人中心</p>
+				</a>
+				<a href="#" class="item">
+					 <i class="icon ion-ios-information-outline"></i>	
+					 <p>关于我们</p>
+				</a>
+			</div>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>
+<!--回到顶部-->
+<div class="back-box">
+		<a href="#"><img src="img/bag-icon.png" alt="我的收藏" /></a>
+		<a href="#"><img src="img/back-top.png" alt="回到顶部" /></a>
+</div>
+</body>
+<script type="text/javascript">
+
+/*console.log($("#box .scroll-content" ))
+	$("#box ion-content").scroll(function(){
+		if($("#box").scrollTop() < 20){
+			console.log($("#box").scrollTop())
+			$("#box").css({"display":"none"})
+		}
+	})*/
+	
+
+</script>
+</html>

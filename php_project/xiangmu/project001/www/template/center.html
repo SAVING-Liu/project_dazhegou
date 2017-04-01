@@ -1,0 +1,58 @@
+
+
+<ion-view view-title="会员登陆">
+	<ion-nav-buttons side="left">
+		
+		<a class="icon ion-arrow-left-c button no-border" href="#/tab/home"></a>
+		
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<button class="button button-clear">
+			注册
+		</button>
+	</ion-nav-buttons>
+	<ion-content class="centerbg">
+		<fieldset>
+			<legend>会员账号登陆</legend>
+			<form id="login" action="" method="get" style="width:100%" ng-controller="login">
+				<div class="list list-inset">
+				  <label class="item item-input">
+				    <i class="icon ion-ios-person-outline placeholder-icon"></i>
+				    <input  type="text" name="username" id="username" placeholder="请输入用户名">
+				    <span id="error_un"></span>
+				  
+				  </label>
+				  
+				   <label class="item item-input">
+				    <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+				    <input type="password" name="password" id="password" placeholder="请输入密码">
+				      <span id="error_pw"></span>
+				  </label>
+				</div>
+				<button id="loginbtn" ng-click='login' class="button button-full button-assertive">
+				  登陆
+				</button>
+				<p><a href="#" class="misspassword">忘记密码？</a>></p>
+			</form>	
+			
+		</fieldset>
+		<fieldset id="">
+			<legend>第三方账户登陆</legend>
+			<div class="row">
+			  <div class="col">
+			  	<a href="#">
+			  		<img src="img/qq.png" alt="" />
+			  	</a>
+			  </div>
+			  <div class="col">
+			  	<a href="#">
+			  		<img src="img/wb.png" alt="" />
+			  	</a>
+			  </div>
+			</div>
+			
+		</fieldset>
+		
+		<footer-component></footer-component>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,345 @@
+body{color:#5E5E5E}
+p{margin:0}
+ion-content{
+	background-color:#ececec!important;
+	font-size: 14px;
+    color: #666;
+}
+
+.item-input-wrapper{
+	background-color:#fff!important;
+	border:1px solid #f8698d
+}
+.asidelist>a{
+	border:0;
+	margin:0;
+	border-bottom:1px solid #e3e3e3;
+	width:49%;
+	float:left;
+	text-align:center;
+	color:#5e5e5e;
+	margin-bottom:1px
+}
+.asidelist>a:nth-child(odd){
+	margin-right:1%;
+}
+.asidelist>a:active{
+	color:#f8285c;
+	text-decoration:underline
+}
+.asidelist>a:nth-child(1){
+	background-color:#ececec;
+	color:#f8285c;
+	border-left:3px solid #f8285c
+}
+.asidelist>a:nth-child(12),a:nth-child(13){
+	border:0;
+	padding:8px
+}
+a.no-border{
+	border:0
+}
+a.tab-item>{color:#666}
+a.tab-item-active>i{
+	color:#e63b53
+}
+.box{width:100%}
+.box>img{width:100%}
+.slider-pager span.active{color:#fff}
+.slider-pager .slider-pager-page{color:#fff;opacity:0.6}
+.col{text-align:center}
+.col>img{
+	width:50px;
+	height:50px
+}
+/*公共底部*/
+.sanduan .col{padding:5px 0}
+.sanduan .col a{border:0}
+.zhekou{
+	z-index:99;
+	position:relative;
+	top:-10px
+}
+.zhekou>img{
+	width:53px;
+}
+.centerbot{
+	position:relative;
+	height:60px;
+	background-color:#fff
+}
+.centerbot h2{
+	font-size: 12px;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    color: rgba(153, 153, 153, 1);
+    background: #fff;
+    top: 12px;
+    left: 50%;
+    padding: 0 4px;
+    margin-left: -66px;
+}
+.back-box{
+	/*display:none;*/
+	position: fixed;
+    bottom: 40px;
+    left: 50%;
+    margin-left: 33%;
+    z-index: 100;
+}
+.back-box a{
+	width: 44px;
+    display: block;
+    margin-bottom: 1px;
+}
+.back-box a>img{width:44px}
+
+/*个人中心*/
+.centerbg{
+    padding-top: 6%;
+}
+.centerbg fieldset{
+	border:0;
+	border-top:1px solid #eaeaea
+}
+.centerbg legend{
+	font-size:12px;
+	text-align:center;
+	width:96px;
+	height:26px;
+	line-height:26px;
+	background-color:#fff
+}
+.centerbg form .list{
+	padding:5px;
+	margin-top:3%;
+	/*width:100%;*/
+	height:106px;
+	background-color:#fff;
+}
+.centerbg label.item{
+	border:0;background-color:#fff
+}
+.centerbg label>input{
+	border:1px solid #e8e8e8
+}
+.centerbg hr{color:#ebebeb}
+.centerbg form button.button{
+	border-radius: 5px;
+	margin-left:5px;
+	margin-top:6%
+}
+.centerbg form p{text-align:right}
+.centerbg form a.misspassword{
+	color:#999;
+	text-decoration:underline;
+}
+
+
+/*首页*/
+.homebg section{
+	background-color:#fff
+}
+.goods{
+	background-color:#fff
+}
+.listitem{
+	border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    background-color: #fff;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 5px;
+}
+.listitem>div{
+	float: left;
+    width: 47%;
+    position: relative;
+    margin: 2% 0 0 2%
+}
+.picitem a{
+	color:#fff;
+	text-decoration:none
+}
+.picitem .lingquan{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.lingquan span{
+	display:block;
+	background-color:#f9117e;
+	text-align:center
+}
+.lingquan b{
+	padding-left:48px;
+	background:url(../img/qulingquan_ico1.png) no-repeat;
+	background-size:48px 20px;
+}
+.homepic_pic span{
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(../img/new.png) no-repeat;
+	height: 0;
+    overflow: hidden;
+    padding-top: 37px;
+    width: 37px;
+    z-index: 15;
+}
+.picword p{
+	width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #808080;
+    height: 26px;
+    line-height: 26px;
+    background: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    text-indent: 5px;
+}
+.picword .row{
+	color:#f8285c;
+	padding:0
+}
+.tip_quan{
+	margin-top:5px;
+    height: 20px;
+    background: #f9117e;
+    text-align: center;
+    line-height: 10px;
+    color: #fff;
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.tip_quan em{
+	background: url(../img/tips.gif) no-repeat;
+    width: 9px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: -9px;
+}
+.list-page{
+	width:100%;
+	overflow:hidden
+}
+.list-page>div{
+	height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.page-nav span{
+	height: 25px;
+    line-height: 25px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 9px;
+    border-radius: 20px;
+    margin: 0px auto 0px 5px;
+    cursor: pointer;
+    background: #FFCBCB;
+}
+.page-nav a{
+	height: 25px;
+    line-height: 25px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 9px;
+    border-radius: 20px;
+    margin: 0px auto 0px 0px;
+    cursor: pointer;
+    background: #FD7690;
+    text-decoration:none
+}
+
+/*discount 页面*/
+.discountbg{
+	height: 100%;
+    width: 100%;
+}
+.salegoods{
+	margin: 10px 2% 0
+}
+.salegoods div.item{
+	position: relative;
+    background: #fff;
+    padding: 2% 0;
+    background: #fff;
+    margin-top: 10px;
+}
+.salegoods .title{
+	margin: 0 2%
+}
+.salegoods .title>img{
+	height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.gotolook{
+	display: block;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    background: #fff;
+    height: 60px;
+    line-height: 20px;
+    padding: 10px 0;
+    width: 150px;
+    border-radius: 30px;
+    opacity: .9;
+    z-index: 10;
+    color: #999;
+    font-size: 16px;
+    margin-left: -75px;
+    text-decoration:none
+}
+.gotolook em{
+	color: #f8285c;
+    font-size: 22px;
+}
+.salegoods .col{
+	float: left;
+    width: 47%;
+    position: relative;
+}
+.salegoods .col>img{
+	width: 100%;
+	height:auto;
+    position: relative;
+    display: inherit;
+}
+.salegoods .col .mask{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    opacity: .8;
+    height: 34px;
+}
+.salegoods .col .price{
+	position:absolute;
+	bottom:0;
+	width: 96%;
+    height: 26px;
+    line-height: 18px;
+}
+.salegoods .col .price>span{
+	color:#f8285c;	
+	font-size:20px
+}
+.salegoods .col .price>span i{
+	font-size:12px
+}
+.salegoods .col .price>i{
+	color: rgba(171, 171, 171, 1);
+    text-decoration: line-through;
+    margin-left: 2px;
+    font-size:12px
+}
+.banner>img{width:100%}
